@@ -34,7 +34,7 @@ class FormMovie extends React.Component {
   render() {
     return (
       <div className="FormMovie">
-        <h1>Saisie de votre film péféré</h1>
+        <h1>Saisie de votre film préféré</h1>
         <form onSubmit={this.submitForm}>
           <fieldset>
             <legend>Informations</legend>
