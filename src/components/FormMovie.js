@@ -5,8 +5,8 @@ class FormMovie extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      moviename: "",
-      movieposter: "",
+      title: "",
+      poster: "",
       comment: "",
     };
     this.onChange = this.onChange.bind(this);
@@ -39,25 +39,25 @@ class FormMovie extends React.Component {
           <fieldset>
             <legend>Informations</legend>
             <div className="form-data">
-              <label htmlFor="moviename">Titre du film<span> * </span></label>
+              <label htmlFor="title">Titre du film<span> * </span></label>
               <input
                 type="text"
-                id="moviename"
-                name="moviename"
+                id="title"
+                name="title"
                 onChange={this.onChange}
                 required
-                value={this.state.moviename}
+                value={this.state.title}
               />
             </div>
             <div className="form-data">
-              <label htmlFor="movieposter">Url Poster du film<span> * </span></label>
+              <label htmlFor="poster">Url Poster du film<span> * </span></label>
               <input
                 type="text"
-                id="movieposter"
-                name="movieposter"
+                id="poster"
+                name="poster"
                 onChange={this.onChange}
                 required
-                value={this.state.movieposter}
+                value={this.state.poster}
               />
             </div>
             <div className="form-data">
